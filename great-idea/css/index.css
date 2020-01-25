@@ -65,17 +65,45 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.container {
+#container {
 	width: 90%;
 	margin: 0 auto;
 }
 
+header{
+	margin: auto;
+}
 
 .navigation {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
 	/*height: 30px;
 	position: fixed;
 	margin: 30px;*/
 }
+
+nav {
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 20px;
+    /*position: fixed;*/
+    font-family: 'Titillium Web', sans-serif;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+}
+
+li {
+	display: flex;
+	justify-content: space-between;
+}
+
 .navigation a{
 
 	margin: 50px;
@@ -84,8 +112,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .logo {
-	/*margin-left: 50px;
-	margin-top: 20px;*/
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    padding: 10px;
+    margin: 10px;
 }
 
 .title {
