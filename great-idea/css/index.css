@@ -66,8 +66,9 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 #container {
-	width: 90%;
-	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+
 }
 
 header{
@@ -152,29 +153,60 @@ button {
 	display: inline-block;
 }
 
-.top {
-	width: 32%;
-	display: inline-block;
-	margin-right: 200px;
+.content {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+}
+
+.top-content {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.middle-content {
+	display: flex;
+	justify-content: space-around;
 }
 
 .features {
-
+	width: 32%;
+	box-sizing: border-box;
 }
 
 .about {
-	
-}
-
-.bottom {
 	width: 32%;
-	display: inline-block;
-	margin: 5px;
+	box-sizing: border-box;	
 }
 
 .second-img {
 	width: 100%;
 	margin: 15px;
+}
+
+.bottom-content {
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+
+.services {
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.product {
+	width: 50%;
+	box-sizing: border-box;	
+}
+
+.vision {
+	width: 50%;
+	box-sizing: border-box;	
 }
 
 .contact {
